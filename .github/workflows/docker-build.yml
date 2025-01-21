@@ -1,0 +1,76 @@
+name: CHT interoperability mediator docker build
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      BUILD_TIMESTAMP: ${{ steps.outputtimestamp.outputs.BUILD_TIMESTAMP }}
+    steps:       
+      - name: Build timestamp
+        id: timestamp
+        run: echo "BUILD_TIMESTAMP=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
+      - id: outputtimestamp
+        run: echo "::set-output name=BUILD_TIMESTAMP::${{ env.BUILD_TIMESTAMP }}"
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push openhim-mediator
+        uses: docker/build-push-action@v4
+        with:
+          context: ./mediator
+          file: ./mediator/Dockerfile
+          push: true
+          tags: medicmobile/openhim-mediator:${{ env.BUILD_TIMESTAMP }}
+
+  
+  deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/main'
+    needs: [ build ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 30 seconds
+        run: sleep 2m
+        shell: bash
+        
+      - env:
+          BUILD_TIMESTAMP: ${{ needs.build.outputs.BUILD_TIMESTAMP }}
+        run: echo "BUILD_TIMESTAMP=${{ needs.build.outputs.BUILD_TIMESTAMP }}" >> $GITHUB_ENV
+
+      - name: Set the Kubernetes context
+        uses: azure/k8s-set-context@v2
+        with:
+          method: service-account
+          k8s-url: https://23B4021D5F26E3760D05A01DA520DBA3.gr7.eu-west-2.eks.amazonaws.com
+          k8s-secret: ${{ secrets.KUBERNETES_SECRET }}
+
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Deploy to the Kubernetes cluster
+        uses: azure/k8s-deploy@v1
+        with:
+          namespace: openhim-dev
+          manifests: |
+            kubernetes/deployment.yaml
+          images: |
+            medicmobile/openhim-mediator:${{ env.BUILD_TIMESTAMP }}

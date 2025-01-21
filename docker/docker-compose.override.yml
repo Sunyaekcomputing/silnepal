@@ -1,0 +1,28 @@
+services:
+  gateway:
+    build:
+      context: ./gateway
+    ports: !override
+      - "81:80"
+    networks:
+      - openmrs_network
+
+  frontend:
+    build:
+      context: ./frontend
+    networks:
+      - openmrs_network
+
+  backend:
+    build:
+      context: .
+    networks:
+      - openmrs_network
+
+  db:
+    networks:
+        - openmrs_network
+
+networks:
+  openmrs_network:
+    external: true

@@ -1,0 +1,337 @@
+[
+  {
+    "name": "ANC Reminders LMP",
+    "translation_key": "schedule.anc_lmp",
+    "summary": "ANC Reminders",
+    "description": "",
+    "start_from": "fields.lmp_date",
+    "start_mid_group": "true",
+    "messages": [
+      {
+        "translation_key": "messages.schedule.anc.reminder_1_1",
+        "group": 1,
+        "offset": "77 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_1_2",
+        "group": 1,
+        "offset": "84 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_1_patient",
+        "group": 1,
+        "offset": "57 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_2_1",
+        "group": 2,
+        "offset": "113 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_2_2",
+        "group": 2,
+        "offset": "120 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_2_patient",
+        "group": 2,
+        "offset": "105 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_3_1",
+        "group": 3,
+        "offset": "169 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_3_2",
+        "group": 3,
+        "offset": "176 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_3_patient",
+        "group": 3,
+        "offset": "133 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_4_1",
+        "group": 4,
+        "offset": "197 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_4_2",
+        "group": 4,
+        "offset": "204 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_4_patient",
+        "group": 4,
+        "offset": "189 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_5_1",
+        "group": 5,
+        "offset": "225 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_5_patient",
+        "group": 5,
+        "offset": "217 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_6_1",
+        "group": 6,
+        "offset": "239 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_6_patient",
+        "group": 6,
+        "offset": "231 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_7_1",
+        "group": 7,
+        "offset": "253 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_7_patient",
+        "group": 7,
+        "offset": "245 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_8_1",
+        "group": 8,
+        "offset": "281 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.reminder_8_patient",
+        "group": 8,
+        "offset": "259 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      }
+    ]
+  },
+  {
+    "name": "PNC Reminders",
+    "translation_key": "schedule.pnc_rem",
+    "summary": "",
+    "description": "Scheduled reminders for PNC",
+    "start_mid_group": "true",
+    "start_from": ["fields.delivery.delivery_date","birth_date","fields.delivery_date"],
+    "messages": [
+      {
+        "translation_key": "messages.schedule.pnc.1",
+        "group": 1,
+        "offset": "4 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.pnc.2",
+        "group": 1,
+        "offset": "16 days",
+        "send_day": "",
+        "send_time": "4:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.pnc.3",
+        "group": 2,
+        "offset": "44 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      }
+    ]
+  },
+  {
+    "name": "Registration Reminders",
+    "translation_key": "schedule.registration.new_person",
+    "summary": "",
+    "description": "Scheduled reminders for Person Registration",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "messages.schedule.registration.day_1",
+        "group": 1,
+        "offset": "1 days",
+        "send_day": "",
+        "send_time": "5:30 +05:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.registration.day_3",
+        "group": 2,
+        "offset": "3 days",
+        "send_day": "",
+        "send_time": "5:30 +05:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.registration.day_14",
+        "group": 3,
+        "offset": "14 days",
+        "send_day": "",
+        "send_time": "5:30 +05:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.registration.day_14.hf",
+        "group": 3,
+        "offset": "14 days",
+        "send_day": "",
+        "send_time": "10:30 +05:45",
+        "recipient": "link:g30_health_center"
+      }
+    ]
+  },
+  {
+    "name": "Delivery Reminders",
+    "translation_key": "schedule.delivery_lmp",
+    "summary": "",
+    "description": "Scheduled reminders for Delivery",
+    "start_from": "fields.lmp_date",
+    "messages": [
+      {
+        "translation_key": "messages.schedule.anc.delivery_1",
+        "group": 1,
+        "offset": "266 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_1_patient",
+        "group": 1,
+        "offset": "266 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_2",
+        "group": 1,
+        "offset": "273 days",
+        "send_day": "",
+        "send_time": "23:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_2_patient",
+        "group": 1,
+        "offset": "273 days",
+        "send_day": "",
+        "send_time": "01:15",
+        "recipient": "patient.phone"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_3",
+        "group": 2,
+        "offset": "287 days",
+        "send_day": "",
+        "send_time": "4:45",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_parent_1",
+        "group": 2,
+        "offset": "288 days",
+        "send_day": "",
+        "send_time": "4:45",
+        "recipient": "link:g30_health_center"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_4",
+        "group": 3,
+        "offset": "315 days",
+        "send_day": "",
+        "send_time": "23:30",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "messages.schedule.anc.delivery_parent_2",
+        "group": 3,
+        "offset": "322 days",
+        "send_day": "",
+        "send_time": "4:45",
+        "recipient": "link:g30_health_center"
+      }
+    ]
+  },
+  {
+    "name": "Test Schedules",
+    "translation_key": "schedule.test",
+    "summary": "",
+    "description": "Test schedule",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "messages.test",
+        "offset": "30 seconds",
+        "send_day": "",
+        "group" : "1",
+        "send_time": "14:25 +05:45",
+        "recipient": "reporting_unit"
+      }
+    ]
+  }
+]

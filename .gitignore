@@ -1,0 +1,7 @@
+node_modules/
+*/.env
+.DS_Store
+mediator/dist
+mediator/coverage
+srv/
+.idea

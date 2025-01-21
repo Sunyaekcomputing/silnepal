@@ -1,0 +1,41 @@
+{
+  "name": "cht-interoperability",
+  "version": "1.0.0",
+  "description": "CHT - eCHIS interoperability project",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "postinstall": "husky install",
+    "init": "./startup.sh init",
+    "down": "./startup.sh down",
+    "destory": "./startup.sh destroy",
+    "up": "./startup.sh up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medic/cht-interoperability.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medic/cht-interoperability/issues"
+  },
+  "homepage": "https://github.com/medic/cht-interoperability#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@medic/eslint-config": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.31.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
+}

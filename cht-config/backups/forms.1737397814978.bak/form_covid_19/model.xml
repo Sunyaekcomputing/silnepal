@@ -1,0 +1,17 @@
+
+  <model>
+    <instance>
+        <covid_19 xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="covid_19" prefix="J1!covid_19!" delimiter="#">
+          <covid_symptoms/>
+          <onset_date/>
+          <test_done/>
+          <test_results/>
+          <submission_note/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_19>
+      </instance>
+    <instance id="contact-summary"/>
+  </model>
+

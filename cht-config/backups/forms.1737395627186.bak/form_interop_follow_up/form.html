@@ -1,0 +1,31 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="interop_follow_up">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">Interoperability Follow Up</h3>
+<select id="form-languages" style="display:none;" data-default-lang=""><option value="en">en</option> </select>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/interop_follow_up/inputs" data-relevant="./source = 'user'"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs:label">Patient</span></h4>
+<section class="or-group " name="/interop_follow_up/inputs/contact"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs/contact:label">Contact</span></h4>
+<label class="question non-select or-appearance-db-object "><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs/contact/_id:label">What is the patient's name?</span><input type="text" name="/interop_follow_up/inputs/contact/_id" data-type-xml="person"></label><section class="or-group " name="/interop_follow_up/inputs/contact/parent"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs/contact/parent:label">Parent</span></h4>
+<section class="or-group " name="/interop_follow_up/inputs/contact/parent/parent"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs/contact/parent/parent:label">Parent</span></h4>
+<section class="or-group " name="/interop_follow_up/inputs/contact/parent/parent/contact"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/inputs/contact/parent/parent/contact:label">Contact</span></h4>
+      </section>
+      </section>
+      </section>
+      </section>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/interop_follow_up/vaccination_details"><h4><span lang="en" class="question-label active" data-itext-id="/interop_follow_up/vaccination_details:label">Vaccination details</span></h4>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="en" class="question-label active" data-itext-id="/interop_follow_up/vaccination_details/interop_follow_up:label">Should the patient have a follow up appointment?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class=""><input type="radio" name="/interop_follow_up/vaccination_details/interop_follow_up" data-name="/interop_follow_up/vaccination_details/interop_follow_up" value="yes" data-required="true()" data-type-xml="select1"><span lang="en" class="option-label active" data-itext-id="/interop_follow_up/vaccination_details/interop_follow_up/yes:label">Yes</span></label><label class=""><input type="radio" name="/interop_follow_up/vaccination_details/interop_follow_up" data-name="/interop_follow_up/vaccination_details/interop_follow_up" value="no" data-required="true()" data-type-xml="select1"><span lang="en" class="option-label active" data-itext-id="/interop_follow_up/vaccination_details/interop_follow_up/no:label">No</span></label>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+  
+<fieldset id="or-calculated-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/interop_follow_up/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"></label></fieldset>
+</form>

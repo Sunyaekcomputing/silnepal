@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>covid_19</h:title>
+    <model>
+      <instance>
+        <covid_19 id="covid_19" prefix="J1!covid_19!" delimiter="#">
+          <covid_symptoms/>
+          <onset_date/>
+          <test_done/>
+          <test_results/>
+          <submission_note/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_19>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_19/covid_symptoms" type="string" required="true()"/>
+      <bind nodeset="/covid_19/onset_date" type="date" required="true()"/>
+      <bind nodeset="/covid_19/test_done" type="select1" required="true()"/>
+      <bind nodeset="/covid_19/test_results" type="select1" required="true()"/>
+      <bind nodeset="/covid_19/submission_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="multiline" ref="/covid_19/covid_symptoms">
+      <label>Covid-19 Symptoms</label>
+    </input>
+    <input ref="/covid_19/onset_date">
+      <label>Onset Date</label>
+    </input>
+    <select1 ref="/covid_19/test_done">
+      <label>Test Done</label>
+      <item>
+        <label>Respiratory PCR</label>
+        <value>respiratory_pcr</value>
+      </item>
+      <item>
+        <label>Antigen Test</label>
+        <value>antigen_test</value>
+      </item>
+      <item>
+        <label>Other</label>
+        <value>other</value>
+      </item>
+    </select1>
+    <select1 ref="/covid_19/test_results">
+      <label>Test Results</label>
+      <item>
+        <label>Positive</label>
+        <value>positive</value>
+      </item>
+      <item>
+        <label>Negative</label>
+        <value>negative</value>
+      </item>
+      <item>
+        <label>Inconclusive</label>
+        <value>inconclusive</value>
+      </item>
+    </select1>
+    <input ref="/covid_19/submission_note">
+      <label>Covid-19 form submitted successfully!</label>
+    </input>
+  </h:body>
+</h:html>

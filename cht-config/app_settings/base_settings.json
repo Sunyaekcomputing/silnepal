@@ -1,0 +1,2187 @@
+{
+  "languages": [
+    {
+      "locale": "bm",
+      "enabled": false
+    },
+    {
+      "locale": "en",
+      "enabled": true
+    },
+    {
+      "locale": "es",
+      "enabled": false
+    },
+    {
+      "locale": "fr",
+      "enabled": false
+    },
+    {
+      "locale": "hi",
+      "enabled": false
+    },
+    {
+      "locale": "id",
+      "enabled": false
+    },
+    {
+      "locale": "ne",
+      "enabled": true
+    },
+    {
+      "locale": "sw",
+      "enabled": false
+    }
+  ],
+  "locales": null,
+  "locale": "ne",
+  "locale_outgoing": "ne",
+  "date_format": "ddd, MMM Do, YYYY",
+  "reported_date_format": "ddd, MMM Do, YYYY [at] h:mm A",
+  "forms_only_mode": false,
+  "place_hierarchy_types": [
+    "g10_district",
+    "g20_municipality",
+    "g30_health_center"
+  ],
+  "default_responses": {
+    "start_date": "1970-01-01"
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": 977,
+  "gateway_number": "+9779768445470",
+  "schedule_morning_hours": 6,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 20,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "g40_clinic.name",
+  "roles": {
+    "national_admin": {
+      "name": "usertype.national-manager"
+    },
+    "district_admin": {
+      "name": "usertype.district-manager",
+      "offline": true
+    },
+    "data_entry": {
+      "name": "usertype.data-entry"
+    },
+    "analytics": {
+      "name": "usertype.analytics"
+    },
+    "gateway": {
+      "name": "usertype.gateway"
+    },
+    "district_level": {
+      "name": "usertype.district_level"
+    },
+    "munic_level": {
+      "name": "usertype.munic_level",
+      "offline": true
+    },
+    "hf_level": {
+      "name": "usertype.hf_level",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+      "gateway"
+    ],
+    "can_bulk_delete_reports": [
+      "national_admin",
+      "district_admin"
+    ],
+    "can_configure": [
+      "national_admin"
+    ],
+    "can_create_people": [
+      "national_admin",
+      "district_admin",
+      "hf_level"
+    ],
+    "can_create_places": [
+      "national_admin",
+      "hf_level"
+    ],
+    "can_create_records": [
+      "national_admin",
+      "district_admin",
+      "data_entry",
+      "gateway",
+      "hf_level"
+    ],
+    "can_create_users": [
+      "national_admin"
+    ],
+    "can_delete_contacts": [
+      "national_admin",
+      "district_admin"
+    ],
+    "can_delete_messages": [
+      "national_admin",
+      "district_admin"
+    ],
+    "can_delete_reports": [
+      "national_admin",
+      "district_admin"
+    ],
+    "can_delete_users": [
+      "national_admin"
+    ],
+    "can_edit": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "hf_level"
+    ],
+    "can_edit_profile": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_edit_verification": [
+      "national_admin",
+      "district_admin",
+      "hf_level"
+    ],
+    "can_export_all": [
+      "national_admin",
+      "hf_level"
+    ],
+    "can_export_audit": [
+      "national_admin"
+    ],
+    "can_export_contacts": [
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_export_feedback": [],
+    "can_export_forms": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_export_messages": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_log_out_on_android": [],
+    "can_update_messages": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "hf_level"
+    ],
+    "can_update_people": [
+      "national_admin",
+      "hf_level"
+    ],
+    "can_update_places": [
+      "national_admin",
+      "hf_level"
+    ],
+    "can_update_reports": [
+      "national_admin",
+      "hf_level"
+    ],
+    "can_update_users": [
+      "national_admin"
+    ],
+    "can_verify_reports": [
+      "national_admin",
+      "district_admin",
+      "hf_level"
+    ],
+    "can_view_analytics": [
+      "national_admin",
+      "analytics"
+    ],
+    "can_view_analytics_tab": [
+      "national_admin"
+    ],
+    "can_view_call_action": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_contacts": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_contacts_tab": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_data_records": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "gateway",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_last_visited_date": [],
+    "can_view_message_action": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_messages": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_messages_tab": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_outgoing_messages": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_reports": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_reports_tab": [
+      "national_admin",
+      "district_admin",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_tasks": [
+      "district_admin",
+      "hf_level"
+    ],
+    "can_view_tasks_tab": [
+      "district_admin",
+      "hf_level"
+    ],
+    "can_view_unallocated_data_records": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "district_level",
+      "munic_level",
+      "hf_level"
+    ],
+    "can_view_users": [
+      "national_admin"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_export_dhis": [
+      "national_admin"
+    ],
+    "can_view_uhc_stats": [],
+    "can_view_tasks_group": [
+      "hf_level"
+    ],
+    "can_aggregate_targets": [],
+    "can_upgrade": [],
+    "can_view_old_filter_and_search": []
+  },
+  "contact_types": [
+    {
+      "id": "g10_district",
+      "name_key": "contact.type.g10_district",
+      "group_key": "contact.type.g10_district.plural",
+      "create_key": "contact.type.g10_district.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:g10_district:create",
+      "edit_form": "form:contact:g10_district:edit",
+      "person": false
+    },
+    {
+      "id": "g20_municipality",
+      "name_key": "contact.type.g20_municipality",
+      "group_key": "contact.type.g20_municipality.plural",
+      "create_key": "contact.type.g20_municipality.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-municipality",
+      "create_form": "form:contact:g20_municipality:create",
+      "edit_form": "form:contact:g20_municipality:edit",
+      "person": false,
+      "parents": [
+        "g10_district"
+      ]
+    },
+    {
+      "id": "g30_health_center",
+      "name_key": "contact.type.g30_health_center",
+      "group_key": "contact.type.g30_health_center.plural",
+      "create_key": "contact.type.g30_health_center.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "g20_municipality"
+      ],
+      "icon": "medic-health-center",
+      "create_form": "form:contact:g30_health_center:create",
+      "edit_form": "form:contact:g30_health_center:edit",
+      "person": false
+    },
+    {
+      "id": "g40_clinic",
+      "name_key": "contact.type.g40_clinic",
+      "group_key": "contact.type.g40_clinic.plural",
+      "create_key": "contact.type.g40_clinic.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "g30_health_center"
+      ],
+      "icon": "medic-clinic",
+      "create_form": "form:contact:g40_clinic:create",
+      "edit_form": "form:contact:g40_clinic:edit",
+      "count_visits": true,
+      "person": false
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "clinic.field.contact",
+      "parents": [
+        "g10_district",
+        "g20_municipality",
+        "g30_health_center",
+        "g40_clinic"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true
+    }
+  ],
+  "setup_complete": true,
+  "muvuku_webapp_url": "/medic-reporter/_design/medic-reporter/_rewrite/?_embed_mode=2&_locale=en#/generic-anc.json",
+  "anc_forms": {
+    "registrationLmp": "ल",
+    "visit": "ग",
+    "delivery": "ज",
+    "flag": "ख"
+  },
+  "care_coordinator": "chw",
+  "anc_registration_lmp": true,
+  "statistics_submission": "none",
+  "outgoing_phone_replace": {
+    "match": "",
+    "replace": ""
+  },
+  "outgoing_phone_filters": [
+    {
+      "match": "",
+      "replace": ""
+    }
+  ],
+  "id_format": "1111",
+  "statistics_submission_number": "",
+  "replication_depth": [
+    {
+      "role": "non-existant-role",
+      "depth": 42
+    }
+  ],
+  "alerts": [
+    {
+      "form": "",
+      "condition": "",
+      "message": "",
+      "recipient": ""
+    }
+  ],
+  "registrations": [
+    {
+      "form": "ल",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_expected_date",
+          "params": "lmp_date",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Delivery Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "registration.lmp_date.patient_id.incorrect"
+          },
+          {
+            "property": "patient_id",
+            "rule": "unique('patient_id','lmp_year','lmp_month','lmp_day')",
+            "translation_key": "registration.lmp_date.duplicate_pregnancy"
+          },
+          {
+            "property": "lmp_year",
+            "rule": "(integer && min(2078) && max(2090))",
+            "translation_key": "registration.lmp_date.year.incorrect"
+          },
+          {
+            "property": "lmp_month",
+            "rule": "(integer && min(1) && max(12))",
+            "translation_key": "registration.lmp_date.month.incorrect"
+          },
+          {
+            "property": "lmp_day",
+            "rule": "(integer && min(1) && max(32))",
+            "translation_key": "registration.lmp_date.day.incorrect"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isBefore('1 month')",
+            "translation_key": "messages.registration.lmp_date.incorrect.before"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isAfter('-42 weeks')",
+            "translation_key": "messages.registration.lmp_date.incorrect.after"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "registration.lmp_date.ok",
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.health_center",
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        },
+        {
+          "translation_key": "registration.lmp_date.patient_id.not_found",
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "ज",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "birth_date",
+          "bool_expr": "doc.days_since_birth"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "PNC Reminders",
+          "bool_expr": "doc.days_since_birth"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Delivery Reminders, ANC Reminders LMP",
+          "bool_expr": "doc.patient_id"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! ज <डेलिभरी कोड><दर्ता नं (५ देखि १३ अंकको)> <डेलिभरी भएको दिन>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "delivery_code",
+            "rule": "regex('^(स|श|ष|सद|शद|षद|घद|घ)$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#delivery_code}} नमस्ते {{contact.name}}! {{delivery_code}} डेलिभरी कोड मिलेन। स्वास्थ्य सँस्थामा भएको जन्मको लागि ‘स’ र घरमा भएको जन्मको लागि ‘घ’ प्रयोग गर्नुहोला। धन्यवाद। {{/delivery_code}}",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "days_since_birth",
+            "rule": "(integer && min(0) && max(50))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#days_since_birth}}नमस्ते {{contact.name}}! प्रसुति पश्चातको अवधि मिलेन, सो अवधि ० देखि ५० दिन भित्र हुनुपर्दछ। तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! ज <डेलिभरी कोड> {{patient_id}} <डेलिभरी भएको दिन>{{/days_since_birth}}{{^days_since_birth}}नमस्ते {{contact.name}}! प्रसुति पश्चातको अवधि ० देखि ५० दिन भित्र हुनुपर्दछ। तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! ज <डेलिभरी कोड> {{patient_id}} <डेलिभरी भएको दिन>{{/days_since_birth}}",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{patient_name}} ({{patient_id}}) का लागि प्रसुति प्रतिवेदन प्राप्त भयो। १,३,७-१४ र ४२ दिनमा हुनु पर्ने सुत्केरी जाँचभेट एकिन गरी SMS बाट प {{patient_id}} <जाँचको पटक> पठाउनुहोला धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}} बाट {{patient_name}} ({{patient_id}}) को प्रसुति प्रतिवेदन प्राप्त भयो। १,३,७-१४ र ४२ दिनमा हुनु पर्ने सुत्केरी जाँचभेट गर्न घर भेट गर्नु होला, धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कुनै पनि महिलालाई दिईएको छैन। दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! ज <डेलिभरी कोड><दर्ता नं (५ देखि १३ अंकको)> <डेलिभरी भएको दिन>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "क",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.patient_name"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "age_in_years",
+            "rule": "(integer && min(0) && max(125))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! दर्ताको ढाँचा मिलेन। कृपया तलको ढाँचाअनुसार पुनः पठाउनुहोस्: क <उमेर (बर्षमा)> <नाम (बढीमा ३० अक्षर सम्मको)>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "patient_name",
+            "rule": "(string && lenMin(1) && lenMax(30))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! दर्ताको ढाँचा मिलेन। कृपया तलको ढाँचाअनुसार पुनः पठाउनुहोस्: क <उमेर (बर्षमा)> <नाम (बढीमा ३० अक्षर सम्मको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}, {{patient_name}} ({{patient_id}}) लाई दर्ता गर्नुभएकोमा धन्यवाद! ",
+              "locale": ""
+            }
+          ],
+          "recipient": ""
+        }
+      ]
+    },
+    {
+      "form": "म",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders, ANC Reminders LMP, PNC Reminders, Delivery Reminders",
+          "bool_expr": "doc.patient_id"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#patient_id}}नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! म <दर्ता नं (५ देखि १३ अंकको)>{{/patient_id}}{{^patient_id}}नमस्ते {{contact.name}}! तपाईले पठाउनु भएको रिपोर्टको ढाँचा मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! म <दर्ता नं (५ देखि १३ अंकको)>{{/patient_id}}",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}, {{patient_name}} {{patient_id}} को मृत्युको दु:खद घटनाको सूचना दिनुभएकोमा धन्यवाद। ",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "{{contact.name}} ले {{patient_age}} बर्षिया {{patient_name}} ({{patient_id}}) को मृत्यु भएको सूचना दिनुभएको छ। ",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कसैलाई पनि दिईएको छैन। दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! म <दर्ता नं (५ देखि १३ अंकको)",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "L",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_expected_date",
+          "params": "lmp_date",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Delivery Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "registration.lmp_date.patient_id.incorrect"
+          },
+          {
+            "property": "patient_id",
+            "rule": "unique('patient_id','lmp_year','lmp_month','lmp_day')",
+            "translation_key": "registration.lmp_date.duplicate_pregnancy"
+          },
+          {
+            "property": "lmp_year",
+            "rule": "(integer && min(2078) && max(2090))",
+            "translation_key": "registration.lmp_date.year.incorrect"
+          },
+          {
+            "property": "lmp_month",
+            "rule": "(integer && min(1) && max(12))",
+            "translation_key": "registration.lmp_date.month.incorrect"
+          },
+          {
+            "property": "lmp_day",
+            "rule": "(integer && min(1) && max(32))",
+            "translation_key": "registration.lmp_date.day.incorrect"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isBefore('1 month')",
+            "translation_key": "messages.registration.lmp_date.incorrect.before"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isAfter('-42 weeks')",
+            "translation_key": "messages.registration.lmp_date.incorrect.after"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "registration.lmp_date.ok",
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.health_center",
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        },
+        {
+          "translation_key": "registration.lmp_date.patient_id.not_found",
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },  
+    {
+      "form": "pregnancy",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Delivery Reminders",
+          "bool_expr": "doc.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.lmp_date"
+        }
+      ],
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते। {{patient_name}} {{patient_id}} को गर्भावस्था दर्ता भएको छ! उहाँको प्रसुति अनुमानित मिति {{#bikram_sambat_date}}{{expected_date}}{{/bikram_sambat_date}}",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        }
+      ]
+    },
+    {
+      "form": "delivery",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "PNC Reminders",
+          "bool_expr": "doc.patient_id"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Delivery Reminders, ANC Reminders LMP",
+          "bool_expr": "doc.patient_id"
+        }
+      ],
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} {{patient_id}} का लागि जन्मावस्थाको प्रतिबेदन प्राप्त भयो। सुत्केरी जाँचभेट १, ३, ७-१४ र ४२ दिनमा हुनु पर्ने एकिन गरी प्रतिवेदन पठाउनुहोला धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}}! {{patient_name}} को डेलिभरी दर्ता गर्नु भएकोमा धन्यवाद।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "registration.delivery_done.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        }
+      ]
+    },
+    {
+      "form": "ep",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_expected_date",
+          "params": "lmp_date",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "ANC Reminders LMP",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Delivery Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.fields.lmp_date"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "registration.lmp_date.patient_id.incorrect"
+          },
+          {
+            "property": "lmp_year",
+            "rule": "(integer && min(2078) && max(2090))",
+            "translation_key": "registration.lmp_date.year.incorrect"
+          },
+          {
+            "property": "lmp_month",
+            "rule": "(integer && min(1) && max(12))",
+            "translation_key": "registration.lmp_date.month.incorrect"
+          },
+          {
+            "property": "lmp_day",
+            "rule": "(integer && min(1) && max(32))",
+            "translation_key": "registration.lmp_date.day.incorrect"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isBefore('1 month')",
+            "translation_key": "messages.registration.lmp_date.incorrect.before"
+          },
+          {
+            "property": "lmp_date",
+            "rule": "isAfter('-42 weeks')",
+            "translation_key": "messages.registration.lmp_date.incorrect.after"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "registration.lmp_date.ok",
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.health_center",
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "registration.lmp_date.ok.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        },
+        {
+          "translation_key": "registration.lmp_date.patient_id.not_found",
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "ED",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "PNC Reminders",
+          "bool_expr": "doc.delivery_year"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Delivery Reminders, ANC Reminders LMP",
+          "bool_expr": "doc.delivery_year"
+        }
+      ],
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} {{patient_id}} का लागि जन्मावस्थाको प्रतिबेदन प्राप्त भयो। सुत्केरी जाँचभेट १, ३, ७-१४ र ४२ दिनमा हुनु पर्ने एकिन गरी प्रतिवेदन पठाउनुहोला धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}}! {{patient_name}} को डेलिभरी दर्ता गर्नु भएकोमा धन्यवाद।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "registration.delivery_done.patient",
+          "event_type": "report_accepted",
+          "recipient": "patient.phone"
+        }
+      ]
+    },
+    {
+      "form": "J",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "birth_date",
+          "bool_expr": "doc.days_since_birth"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "PNC Reminders",
+          "bool_expr": "doc.days_since_birth"
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Delivery Reminders, ANC Reminders LMP",
+          "bool_expr": "doc.patient_id"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! J <डेलिभरी कोड><दर्ता नं (५ देखि १३ अंकको)> <डेलिभरी भएको दिन>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "delivery_code",
+            "rule": "regex('^(S|A|s|a)$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#delivery_code}} नमस्ते {{contact.name}}! {{delivery_code}} डेलिभरी कोड मिलेन। स्वास्थ्य सँस्थामा भएको जन्मको लागि ‘S’ र घरमा भएको जन्मको लागि ‘A’ प्रयोग गर्नुहोला। धन्यवाद। {{/delivery_code}}",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "days_since_birth",
+            "rule": "(integer && min(0) && max(50))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#days_since_birth}}नमस्ते {{contact.name}}! प्रसुति पश्चातको अवधि मिलेन, सो अवधि ० देखि ५० दिन भित्र हुनुपर्दछ। तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! J <डेलिभरी कोड> {{patient_id}} <डेलिभरी भएको दिन>{{/days_since_birth}}{{^days_since_birth}}नमस्ते {{contact.name}}! प्रसुति पश्चातको अवधि ० देखि ५० दिन भित्र हुनुपर्दछ। तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! J <डेलिभरी कोड> {{patient_id}} <डेलिभरी भएको दिन>{{/days_since_birth}}",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{patient_name}} ({{patient_id}}) का लागि प्रसुति प्रतिवेदन प्राप्त भयो। १,३,७-१४ र ४२ दिनमा हुनु पर्ने सुत्केरी जाँचभेट एकिन गरी SMS बाट P {{patient_id}} <जाँचको पटक> पठाउनुहोला धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}} बाट {{patient_name}} ({{patient_id}}) को प्रसुति प्रतिवेदन प्राप्त भयो। १,३,७-१४ र ४२ दिनमा हुनु पर्ने सुत्केरी जाँचभेट गर्न घर भेट गर्नु होला, धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कुनै पनि महिलालाई दिईएको छैन। दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! J <डेलिभरी कोड><दर्ता नं (५ देखि १३ अंकको)> <डेलिभरी भएको दिन>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "K",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.patient_name"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "age_in_years",
+            "rule": "(integer && min(0) && max(125))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! दर्ताको ढाँचा मिलेन। कृपया तलको ढाँचाअनुसार पुनः पठाउनुहोस्: K <उमेर (बर्षमा)> <नाम (बढीमा ३० अक्षर सम्मको)>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "patient_name",
+            "rule": "(string && lenMin(1) && lenMax(30))",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! दर्ताको ढाँचा मिलेन। कृपया तलको ढाँचाअनुसार पुनः पठाउनुहोस्: K <उमेर (बर्षमा)> <नाम (बढीमा ३० अक्षर सम्मको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}, {{patient_name}} ({{patient_id}}) लाई दर्ता गर्नुभएकोमा धन्यवाद! ",
+              "locale": ""
+            }
+          ],
+          "recipient": ""
+        }
+      ]
+    },
+    {
+      "form": "N",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.patient_name"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_phone",
+            "translation_key": "messages.n_na.invalid_phone",
+            "rule": "validPhone('patient_phone')"
+          },
+          {
+            "property": "patient_phone",
+            "translation_key": "messages.n_na.duplicate_phone",
+            "rule": "uniquePhone('patient_phone')"
+          },
+          {
+            "property": "age_in_years",
+            "rule": "(integer && min(0) && max(125))",
+            "translation_key": "messages.n.invalid_format"
+          },
+          {
+            "property": "patient_name",
+            "rule": "(string && lenMin(1) && lenMax(30))",
+            "translation_key": "messages.n.invalid_format"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "messages.n_na.registered",
+          "recipient": "",
+          "event_type": "report_accepted",
+          "bool_expr": "doc.errors.length===0"
+        },
+        {
+          "translation_key": "messages.n_na.duplicate_phone",
+          "recipient": "",
+          "event_type": "provided_phone_not_unique"
+        }
+      ]
+    },
+    {
+      "form": "न",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Registration Reminders",
+          "bool_expr": "doc.patient_name"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_phone",
+            "rule": "validPhone('patient_phone')",
+            "translation_key": "messages.n_na.invalid_phone"
+          },
+          {
+            "property": "patient_phone",
+            "translation_key": "messages.n_na.duplicate_phone",
+            "rule": "uniquePhone('patient_phone')"
+          },
+          {
+            "property": "age_in_years",
+            "rule": "(integer && min(0) && max(125))",
+            "translation_key": "messages.na.invalid_format"
+          },
+          {
+            "property": "patient_name",
+            "rule": "(string && lenMin(1) && lenMax(30))",
+            "translation_key": "messages.na.invalid_format"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "messages.n_na.registered",
+          "recipient": "",
+          "event_type": "report_accepted",
+          "bool_expr": "doc.errors.length===0"
+        },
+        {
+          "translation_key": "messages.n_na.duplicate_phone",
+          "recipient": "",
+          "event_type": "provided_phone_not_unique"
+        }
+      ]
+    },
+    {
+      "form": "M",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "Registration Reminders, ANC Reminders LMP, PNC Reminders, Delivery Reminders",
+          "bool_expr": "doc.patient_id"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{#patient_id}}नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! M <दर्ता नं (५ देखि १३ अंकको)>{{/patient_id}}{{^patient_id}}नमस्ते {{contact.name}}! तपाईले पठाउनु भएको रिपोर्टको ढाँचा मिलेन। ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! M <दर्ता नं (५ देखि १३ अंकको)>{{/patient_id}}",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}, {{patient_name}} {{patient_id}} को मृत्युको दु:खद घटनाको सूचना दिनुभएकोमा धन्यवाद। ",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "{{contact.name}} ले {{patient_age}} बर्षिया {{patient_name}} ({{patient_id}}) को मृत्यु भएको सूचना दिनुभएको छ। ",
+              "locale": "ne"
+            }
+          ],
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कसैलाई पनि दिईएको छैन। दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! म <दर्ता नं (५ देखि १३ अंकको)",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "openmrs_patient",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_birth_date",
+          "params": "",
+          "bool_expr": "doc.patient_name"
+        },
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": {
+            "parent_id": "location_id"
+          },
+          "bool_expr": "doc.patient_name"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "phone_number",
+            "translation_key": "messages.n_na.invalid_phone",
+            "rule": "validPhone('phone_number')"
+          },
+          {
+            "property": "phone_number",
+            "translation_key": "messages.n_na.duplicate_phone",
+            "rule": "uniquePhone('phone_number')"
+          },
+          {
+            "property": "patient_name",
+            "rule": "(string && lenMin(1) && lenMax(30))",
+            "translation_key": "messages.n.invalid_format"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "messages.n_na.registered",
+          "recipient": "",
+          "event_type": "report_accepted",
+          "bool_expr": "doc.errors.length===0"
+        },
+        {
+          "translation_key": "messages.n_na.duplicate_phone",
+          "recipient": "",
+          "event_type": "provided_phone_not_unique"
+        }
+      ]
+    }
+  ],
+  "patient_reports": [
+    {
+      "form": "ग",
+      "name": "Visits",
+      "format": "ग <patientid>",
+      "silence_type": "ANC Reminders LMP",
+      "silence_for": "0 days",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन! कृपया ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! ग <दर्ता नं (५ देखि १३ अंकको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कुनै पनि महिलालाई दिईएको छैन।दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! ग <दर्ता नं (५ देखि १३ अंकको)>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "ख",
+      "name": "Flag",
+      "format": "ख <patientid>",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "patient_id",
+          "title": "Patient ID"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{patient_id}} दर्ता नं मिलेन! कृपया ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! ख <दर्ता नं (५ देखि १३ अंकको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{patient_name}} {{patient_id}}का लागि खतराको चिन्ह पहिचान भएको रिपोर्ट प्राप्त भयो। उहाँलाई बिशेष निगरानीमा राखी आवश्यकता अनुसार स्वास्थ्य संस्था पठाउनुहोला।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}}ले {{patient_name}} {{patient_id}} का लागि खतराको चिन्ह पहिचान गर्नुभएको छ । म.स्वा.स्व.से.संग सोधखोज गरि आवश्यक सल्लाह दिनुहोला |",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "{{patient_id}} कुनै पनि महिलालाई दिईएको छैन। दर्ता नं सहि भएको एकिन गरी पुन: फारम पठाउनुहोला, धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "प",
+      "name": "PNC Visit",
+      "format": "प <patient_id> <pnc_visits> <notes>",
+      "silence_type": "PNC Reminders",
+      "silence_for": "0 days",
+      "fields": [
+        {
+          "field_name": "patient_id",
+          "title": "Patient ID"
+        },
+        {
+          "field_name": "pnc_visits",
+          "title": "No. of PNC visits"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} सन्देशको ढांचा मिलेन! ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! प <दर्ता नं (५ देखि १३ अंकको)> <हालसम्मको जम्मा सुत्केरी जाँच भेट संख्या>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "pnc_visits",
+            "rule": "(integer && min(0) && max(4)) || in('०','१','२','३','४')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} को सुत्केरी जाँच भेट संख्या मिलेन। ० देखि ४ बीचको संख्या हुनु पर्दछ। मिलाएर पठाउनु होला, धन्यवाद।",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} को सुत्केरी जाँच प्रतिवेदन पठाउनु भएकोमा धन्यवाद।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! सन्देशको ढांचा मिलेन! ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! प <दर्ता नं (५ देखि १३ अंकको)> <हालसम्मको जम्मा सुत्केरी जाँच भेट संख्या>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "G",
+      "name": "Visits",
+      "format": "G <patientid>",
+      "silence_type": "ANC Reminders LMP",
+      "silence_for": "0 days",
+      "fields": [
+        {
+          "field_name": "",
+          "title": ""
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन! कृपया ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! G <दर्ता नं (५ देखि १३ अंकको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} कुनै पनि महिलालाई दिईएको छैन।दर्ता नं सहि भएको एकिन गरी तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यबाद! G <दर्ता नं (५ देखि १३ अंकको)>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "D",
+      "name": "Flag",
+      "format": "D <patientid>",
+      "silence_type": "",
+      "silence_for": "",
+      "fields": [
+        {
+          "field_name": "patient_id",
+          "title": "Patient ID"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "{{patient_id}} दर्ता नं मिलेन! कृपया ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! D <दर्ता नं (५ देखि १३ अंकको)>",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{patient_name}} {{patient_id}}का लागि खतराको चिन्ह पहिचान भएको रिपोर्ट प्राप्त भयो। उहाँलाई बिशेष निगरानीमा राखी आवश्यकता अनुसार स्वास्थ्य संस्था पठाउनुहोला।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते! {{contact.name}}ले {{patient_name}} {{patient_id}} का लागि खतराको चिन्ह पहिचान गर्नुभएको छ । म.स्वा.स्व.से.संग सोधखोज गरि आवश्यक सल्लाह दिनुहोला |",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "{{patient_id}} कुनै पनि महिलालाई दिईएको छैन। दर्ता नं सहि भएको एकिन गरी पुन: फारम पठाउनुहोला, धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "P",
+      "name": "PNC Visit",
+      "format": "P <patient_id> <pnc_visits> <notes>",
+      "silence_type": "PNC Reminders",
+      "silence_for": "0 days",
+      "fields": [
+        {
+          "field_name": "patient_id",
+          "title": "Patient ID"
+        },
+        {
+          "field_name": "pnc_visits",
+          "title": "No. of PNC visits"
+        }
+      ],
+      "validations": {
+        "join_responses": false,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "regex('^[0-9]{5,13}$')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} सन्देशको ढांचा मिलेन! ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन: फारम पठाउनुहोला, धन्यवाद! P <दर्ता नं (५ देखि १३ अंकको)> <हालसम्मको जम्मा सुत्केरी जाँच भेट संख्या>",
+                "locale": "ne"
+              }
+            ]
+          },
+          {
+            "property": "pnc_visits",
+            "rule": "(integer && min(0) && max(4)) || in('०','१','२','३','४')",
+            "translation_key": "",
+            "message": [
+              {
+                "content": "नमस्ते {{contact.name}}! {{patient_id}} को सुत्केरी जाँच भेट संख्या मिलेन। ० देखि ४ बीचको संख्या हुनु पर्दछ। मिलाएर पठाउनु होला, धन्यवाद।",
+                "locale": "ne"
+              }
+            ]
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} को सुत्केरी जाँच प्रतिवेदन पठाउनु भएकोमा धन्यवाद।",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g40_clinic"
+        },
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! सन्देशको ढांचा मिलेन! ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! P <दर्ता नं (५ देखि १३ अंकको)> <हालसम्मको जम्मा सुत्केरी जाँच भेट संख्या>",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "registration_not_found",
+          "recipient": "link:g40_clinic"
+        }
+      ]
+    },
+    {
+      "form": "1",
+      "name": "ANC Visit confirmed by patient",
+      "format": "1",
+      "silence_type": "ANC Reminders LMP",
+      "silence_for": "0 days",
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "गर्भ जाँच एकिन गर्नुभएकोमा धन्यवाद",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "१",
+      "name": "ANC Visit confirmed by patient",
+      "format": "१",
+      "silence_type": "ANC Reminders LMP",
+      "silence_for": "0 days",
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "गर्भ जाँच एकिन गर्नुभएकोमा धन्यवाद",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "pregnancy_visit",
+      "silence_type": "ANC Reminders LMP",
+      "fields": [],
+      "silence_for": "0 days",
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        }
+      ]
+    },
+    {
+      "form": "EANC",
+      "silence_type": "ANC Reminders LMP",
+      "fields": [],
+      "silence_for": "0 days",
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        }
+      ]
+    },
+    {
+      "form": "pnc_vist",
+      "fields": [],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        }
+      ]
+    },
+    {
+      "form": "EPNC",
+      "fields": [],
+      "silence_type": "PNC Reminders",
+      "silence_for": "0 days",
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_name}} ({{patient_id}}) लाई भेटेकोमा धन्यबाद!",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "link:g30_health_center"
+        }
+      ]
+    }
+  ],
+  "accept_case_reports": [],
+  "self_report": [
+    {
+      "form": "1"
+    },
+    {
+      "form": "१",
+      "messages": [
+        {
+          "translation_key": "",
+          "message": [
+            {
+              "content": "गर्भ जाँच एकिन गर्नुभएकोमा धन्यवाद",
+              "locale": "ne"
+            }
+          ],
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "muting": {
+    "mute_forms": [
+      "ब",
+      "B"
+    ],
+    "unmute_forms": [
+      "स",
+      "F"
+    ],
+    "validations": {
+      "join_responses": false,
+      "list": [
+        {
+          "property": "patient_id",
+          "rule": "regex('^[0-9]{5,13}$')",
+          "translation_key": "",
+          "message": [
+            {
+              "content": "नमस्ते {{contact.name}}! {{patient_id}} दर्ता नं मिलेन! कृपया ५ देखि १३ अंकको सहि दर्ता नं प्रयोग गरि तलको ढांचा अनुसार पुन:फारम पठाउनुहोला, धन्यवाद! सूचना बन्द गरेको भए : ब वा B <दर्ता नं (५ देखि १३ अंकको)>, सूचना सुरु गरेको भए: स वा F <दर्ता नं (५ देखि १३ अंकको)>",
+              "locale": "ne"
+            }
+          ]
+        }
+      ]
+    },
+    "messages": [
+      {
+        "translation_key": "",
+        "message": [
+          {
+            "content": "धन्यवाद, {{contact.name}}! {{patient_name}} {{patient_id}} का लागि सबै सुचना बन्द गरिएको छ। सुचारु गर्नका लागि स वा F {{patient_id}} लेखि SMS पठाउनुहोला।",
+            "locale": "ne"
+          }
+        ],
+        "event_type": "mute",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "",
+        "message": [
+          {
+            "content": "{{contact.name}} ले {{patient_name}} ({{patient_id}}) का लागि सबै सुचना बन्द गराउनु भएको छ।",
+            "locale": "ne"
+          }
+        ],
+        "event_type": "mute",
+        "recipient": "link:g30_health_center"
+      },
+      {
+        "translation_key": "",
+        "message": [
+          {
+            "content": "धन्यवाद, {{contact.name}}! {{patient_name}} ({{patient_id}}) का लागि सुचना सुचारु गरिएको छ।",
+            "locale": "ne"
+          }
+        ],
+        "event_type": "unmute",
+        "recipient": "link:g40_clinic"
+      },
+      {
+        "translation_key": "",
+        "message": [
+          {
+            "content": "नमस्ते {{contact.name}}! {{patient_id}} कुनै पनि महिलालाई दिईएको छैन। दर्ता नं सहि भएको एकिन गरी पुन: फारम पठाउनुहोला, धन्यबाद!",
+            "locale": "ne"
+          }
+        ],
+        "event_type": "contact_not_found",
+        "recipient": "link:g40_clinic"
+      }
+    ]
+  },
+  "transitions": {
+    "self_report": true,
+    "accept_patient_reports": true,
+    "conditional_alerts": true,
+    "default_responses": true,
+    "update_sent_by": true,
+    "registration": true,
+    "update_clinics": true,
+    "muting": true,
+    "update_scheduled_reports": true,
+    "generate_shortcode_on_contacts": true,
+    "mark_for_outbound": true
+  },
+  "outbound": {
+    "patient": {
+      "relevant_to": "doc.type === 'person' && doc.patient_id && doc.role === 'patient'",
+      "destination": {
+        "base_url": "http://openhim-core:5001",
+        "path": "/mediator/cht/patient",
+        "auth": {
+          "type": "basic",
+          "username": "interop-client",
+          "password_key": "interop-password"
+        }
+      },
+      "mapping": {
+        "doc._id": "doc._id",
+        "doc.name": "doc.name",
+        "doc.phone": "doc.phone",
+        "doc.date_of_birth": "doc.date_of_birth",
+        "doc.sex": "doc.sex",
+        "doc.patient_id": "doc.patient_id"
+      }
+    },
+    "patient_from_sms": {
+      "relevant_to": "doc.type === 'data_record' && doc.patient_id && doc.form === 'N'",
+      "destination": {
+        "base_url": "http://openhim-core:5001",
+        "path": "/mediator/cht/patient",
+        "auth": {
+          "type": "basic",
+          "username": "interop-client",
+          "password_key": "interop-password"
+        }
+      },
+      "mapping": {
+        "doc.source_id": "doc._id",
+        "doc.name": "doc.fields.patient_name",
+        "doc.phone": "doc.fields.patient_phone",
+        "doc.date_of_birth": "doc.birth_date",
+        "doc.sex": {
+          "expr": "\"female\""
+        },
+        "doc.patient_id": "doc.patient_id"
+      }
+    },
+    "patient_id": {
+      "relevant_to": "doc.type === 'data_record' && doc.form === 'OPENMRS_PATIENT'",
+      "destination": {
+        "base_url": "http://openhim-core:5001",
+        "path": "/mediator/cht/patient_ids",
+        "auth": {
+          "type": "basic",
+          "username": "interop-client",
+          "password_key": "interop-password"
+        }
+      },
+      "mapping": {
+        "doc._id": "doc._id",
+        "doc.patient_id": "doc.patient_id",
+        "doc.external_id": "doc.fields.external_id"
+      }
+    },
+    "pregnancy_registration": {
+      "relevant_to": "doc.type === 'data_record' && doc.form === 'pregnancy'",
+      "destination": {
+        "base_url": "http://openhim-core:5001",
+        "path": "/mediator/cht/encounter",
+        "auth": {
+          "type": "basic",
+          "username": "interop-client",
+          "password_key": "interop-password"
+        }
+      },
+      "mapping": {
+        "id": "doc._id",
+        "patient_uuid": "doc.fields.inputs.contact._id",
+        "reported_date": "doc.reported_date",
+        "observations.0.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.0.valueCode": {
+          "expr": "doc.fields.danger_signs.fever == \"yes\" ? \"43221561-0600-410e-8932-945665533510\" : false"
+        },
+        "observations.1.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.1.valueCode": {
+          "expr": "doc.fields.danger_signs.breathlessness == \"yes\" ? \"070dca86-c275-4369-b405-868904d78156\" : false"
+        },
+        "observations.2.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.2.valueCode": {
+          "expr": "doc.fields.danger_signs.blood_pressure_normal == \"no\" ? \"117399AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" : false"
+        },
+        "observations.3.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.3.valueCode": {
+          "expr": "doc.fields.danger_signs.vaginal_bleeding == \"yes\" ? \"ea6a020e-05cd-4fea-b618-abd7494ac571\" : false"
+        },
+        "observations.4.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.4.valueCode": {
+          "expr": "doc.fields.danger_signs.heart_beat == \"no\" ? \"396c29b0-96e3-4b1e-970f-573e9509e174\" : false"
+        },
+        "observations.5.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.5.valueCode": {
+          "expr": "doc.fields.danger_signs.face_feet_swelling == \"yes\" ? \"0d9e45d6-9288-494e-841c-80f3f9b8e126\" : false"
+        },
+        "observations.6.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.6.valueCode": {
+          "expr": "doc.fields.danger_signs.fits == \"yes\" ? \"73f56d98-207e-4e91-9a41-bc744e933cbd\" : false"
+        },
+        "observations.7.code": {
+          "expr": "\"17a57368-5f59-42c8-aaab-f2774d21501e\""
+        },
+        "observations.7.valueCode": {
+          "expr": "doc.fields.danger_signs.very_pale == \"yes\" ? \"121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" : false"
+        },
+        "observations.8.code": {
+          "expr": "\"1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\""
+        },
+        "observations.8.valueDateTime": "doc.fields.lmp_date",
+        "observations.9.code": {
+          "expr": "\"5596AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\""
+        },
+        "observations.9.valueDateTime": "doc.fields.expected_date",
+        "observations.10.code": {
+          "expr": "\"13179cce-a424-43d7-9ad1-dce7861946e8\""
+        },
+        "observations.10.valueString": "doc.fields.danger_signs.other_any"
+      }
+    }
+  },
+  "_version": "4.3.0",
+  "outgoing_deny_list": "1414, 9771414, +9771414, 1408, 9771408, +9771408, 1415, 9771415, +9771415, 1455, 9771455, +9771455, 9851028801, 9779851028801, +9779851028801, 1477, +9771477, NT, 34455, +97734455, 1422, +9771422",
+  "outgoing_deny_shorter_than": 13,
+  "outgoing_deny_with_alphas": true,
+  "multipart_sms_limit": 10,
+  "sms": {
+    "outgoing_service": "medic-gateway"
+  },
+  "token_login": {
+    "enabled": true,
+    "translation_key": "sms.token.login.help"
+  }
+}

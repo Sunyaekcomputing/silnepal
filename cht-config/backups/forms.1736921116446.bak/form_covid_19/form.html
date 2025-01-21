@@ -1,0 +1,32 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" dir="ltr" data-form-id="covid_19">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">covid_19</h3>
+  
+  
+    <label class="question non-select or-appearance-multiline "><span lang="" class="question-label active">Covid-19 Symptoms</span><span class="required">*</span><textarea name="/covid_19/covid_symptoms" data-required="true()" data-type-xml="string"></textarea><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label>
+    <label class="question non-select "><span lang="" class="question-label active">Onset Date</span><span class="required">*</span><input type="date" name="/covid_19/onset_date" data-required="true()" data-type-xml="date"><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label>
+    <fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Test Done</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class=""><input type="radio" name="/covid_19/test_done" data-name="/covid_19/test_done" value="respiratory_pcr" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Respiratory PCR</span></label><label class=""><input type="radio" name="/covid_19/test_done" data-name="/covid_19/test_done" value="antigen_test" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Antigen Test</span></label><label class=""><input type="radio" name="/covid_19/test_done" data-name="/covid_19/test_done" value="other" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Other</span></label>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+    <fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Test Results</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class=""><input type="radio" name="/covid_19/test_results" data-name="/covid_19/test_results" value="positive" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Positive</span></label><label class=""><input type="radio" name="/covid_19/test_results" data-name="/covid_19/test_results" value="negative" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Negative</span></label><label class=""><input type="radio" name="/covid_19/test_results" data-name="/covid_19/test_results" value="inconclusive" data-required="true()" data-type-xml="select1"><span lang="" class="option-label active">Inconclusive</span></label>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+    <label class="question non-select "><span lang="" class="question-label active">Covid-19 form submitted successfully!</span><input type="text" name="/covid_19/submission_note" data-type-xml="string" readonly></label>
+  
+<fieldset id="or-calculated-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/covid_19/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"></label></fieldset>
+</form>

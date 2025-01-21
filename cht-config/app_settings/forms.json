@@ -1,0 +1,1565 @@
+{
+  "क": {
+    "meta": {
+      "code": "क",
+      "translation_key": "forms.ka.title",
+      "icon": "medic-person"
+    },
+    "fields": {
+      "age_in_years": {
+        "labels": {
+          "tiny": {
+            "en": "Person Age"
+          },
+          "short": {
+            "en": "Person Age"
+          }
+        },
+        "position": 0,
+        "type": "integer",
+        "length": [
+          1,
+          3
+        ],
+        "range": [
+          0,
+          125
+        ],
+        "required": true
+      },
+      "patient_name": {
+        "labels": {
+          "tiny": {
+            "en": "patient_name"
+          },
+          "short": {
+            "en": "Patient Name"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          40
+        ],
+        "required": true
+      }
+    },
+    "public_form": false
+  },
+  "न": {
+    "meta": {
+      "code": "न",
+      "translation_key": "forms.na.title",
+      "icon": "medic-person"
+    },
+    "fields": {
+      "age_in_years": {
+        "labels": {
+          "tiny": {
+            "en": "Person Age"
+          },
+          "short": {
+            "en": "Person Age"
+          }
+        },
+        "position": 0,
+        "type": "integer",
+        "length": [
+          1,
+          3
+        ],
+        "required": true
+      },
+      "patient_phone": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Phone"
+          },
+          "short": {
+            "en": "Patient Phone"
+          }
+        },
+        "position": 1,
+        "flags":{
+          "allow_duplicate": false
+        },
+        "type": "phone_number",
+        "required": true
+      },
+      "patient_name": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Name"
+          },
+          "short": {
+            "en": "Patient Name"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          40
+        ],
+        "required": true
+      }
+    },
+    "public_form": false
+  },
+  "ग": {
+    "meta": {
+      "code": "ग",
+      "translation_key": "forms.ga.title",
+      "icon": "icon-anc-followup"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "id"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    }
+  },
+  "ज": {
+    "meta": {
+      "code": "ज",
+      "translation_key": "forms.ja.title",
+      "icon": "icon-delivery"
+    },
+    "fields": {
+      "delivery_code": {
+        "labels": {
+          "short": {
+            "en": "Delivery Code"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          1,
+          2
+        ],
+        "required": true
+      },
+      "patient_id": {
+        "labels": {
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "days_since_birth": {
+        "labels": {
+          "short": {
+            "en": "Days Since Birth"
+          },
+          "tiny": {
+            "en": "DSB"
+          }
+        },
+        "position": 2,
+        "type": "integer",
+        "length": [
+          1,
+          2
+        ],
+        "range": [
+          1,
+          50
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 3,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    }
+  },
+  "ख": {
+    "meta": {
+      "code": "ख",
+      "translation_key": "forms.kha.title",
+      "icon": "icon-anc-danger-sign"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "ब": {
+    "meta": {
+      "code": "ब",
+      "translation_key": "forms.ba.title",
+      "icon": "icon-off"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string",
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "tiny": {
+            "en": "r",
+            "sw": "r"
+          },
+          "short": {
+            "en": "Reason"
+          }
+        },
+        "position": 1,
+        "length": [
+          3,
+          100
+        ],
+        "type": "string"
+      }
+    }
+  },
+  "स": {
+    "meta": {
+      "code": "स",
+      "translation_key": "forms.sa.title",
+      "icon": "icon-on"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string"
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "प": {
+    "meta": {
+      "code": "प",
+      "translation_key": "forms.pa.title",
+      "icon": "icon-pnc"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string",
+        "required": true
+      },
+      "pnc_visits": {
+        "labels": {
+          "tiny": {
+            "en": "PNCV"
+          },
+          "short": {
+            "en": "PNC Visits"
+          }
+        },
+        "position": 1,
+        "length": [
+          1,
+          1
+        ],
+        "range": [
+          0,
+          4
+        ],
+        "type": "string",
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "म": {
+    "meta": {
+      "code": "म",
+      "translation_key": "forms.ma.title",
+      "icon": "icon-death"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "id"
+          },
+          "short": {
+            "en": "Patient Id"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "death_notes": {
+        "labels": {
+          "tiny": {
+            "en": "note"
+          },
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    },
+    "public_form": false
+  },
+  "ल": {
+    "meta": {
+      "code": "ल",
+      "translation_key": "forms.la.title",
+      "icon": "icon-pregnancy"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "patient_id"
+          },
+          "short": {
+            "en": "Patient Id"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "lmp_year": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_Y"
+          },
+          "short": {
+            "en": "LMP Year"
+          }
+        },
+        "position": 1,
+        "type": "bsYear",
+        "required": true
+      },
+      "lmp_month": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_M"
+          },
+          "short": {
+            "en": "LMP Month"
+          }
+        },
+        "position": 2,
+        "type": "bsMonth",
+        "required": true
+      },
+      "lmp_day": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_D"
+          },
+          "short": {
+            "en": "LMP Day"
+          }
+        },
+        "position": 3,
+        "type": "bsDay",
+        "required": true
+      },
+      "lmp_date": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_DATE"
+          },
+          "short": {
+            "en": "LMP Date"
+          }
+        },
+        "position": 4,
+        "type": "bsAggreDate",
+        "required": false
+      }
+    },
+    "public_form": false
+  },
+  "K": {
+    "meta": {
+      "code": "K",
+      "translation_key": "forms.k.title",
+      "icon": "medic-person"
+    },
+    "fields": {
+      "age_in_years": {
+        "labels": {
+          "tiny": {
+            "en": "Person Age"
+          },
+          "short": {
+            "en": "Person Age"
+          }
+        },
+        "position": 0,
+        "type": "integer",
+        "length": [
+          1,
+          3
+        ],
+        "range": [
+          0,
+          125
+        ],
+        "required": true
+      },
+      "patient_name": {
+        "labels": {
+          "tiny": {
+            "en": "patient_name"
+          },
+          "short": {
+            "en": "Patient Name"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          40
+        ],
+        "required": true
+      }
+    },
+    "public_form": false
+  },
+  "N": {
+    "meta": {
+      "code": "N",
+      "translation_key": "forms.n.title",
+      "icon": "medic-person"
+    },
+    "fields": {
+      "age_in_years": {
+        "labels": {
+          "tiny": {
+            "en": "Person Age"
+          },
+          "short": {
+            "en": "Person Age"
+          }
+        },
+        "position": 0,
+        "type": "integer",
+        "length": [
+          1,
+          3
+        ],
+        "required": true
+      },
+      "patient_phone": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Phone"
+          },
+          "short": {
+            "en": "Patient Phone"
+          }
+        },
+        "position": 1,
+        "flags":{
+          "allow_duplicate": false
+        },
+        "type": "phone_number",
+        "required": true
+      },
+      "patient_name": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Name"
+          },
+          "short": {
+            "en": "Patient Name"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          40
+        ],
+        "required": true
+      }
+    },
+    "public_form": false
+  },
+  "L": {
+    "meta": {
+      "code": "L",
+      "translation_key": "forms.l.title",
+      "icon": "icon-pregnancy"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "patient_id"
+          },
+          "short": {
+            "en": "Patient Id"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "lmp_year": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_Y"
+          },
+          "short": {
+            "en": "LMP Year"
+          }
+        },
+        "position": 1,
+        "type": "bsYear",
+        "required": true
+      },
+      "lmp_month": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_M"
+          },
+          "short": {
+            "en": "LMP Month"
+          }
+        },
+        "position": 2,
+        "type": "bsMonth",
+        "required": true
+      },
+      "lmp_day": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_D"
+          },
+          "short": {
+            "en": "LMP Day"
+          }
+        },
+        "position": 3,
+        "type": "bsDay",
+        "required": true
+      },
+      "lmp_date": {
+        "labels": {
+          "tiny": {
+            "en": "LMP_DATE"
+          },
+          "short": {
+            "en": "LMP Date"
+          }
+        },
+        "position": 4,
+        "type": "bsAggreDate",
+        "required": false
+      }
+    },
+    "public_form": false
+  },        
+  "EP": {
+      "meta": {
+          "code": "EP",
+          "translation_key": "forms.ep.title",
+          "icon": "icon-pregnancy"
+      },
+      "fields": {
+          "patient_id": {
+              "labels": {
+                  "tiny": {
+                      "en": "patient_id"
+                  },
+                  "short": {
+                      "en": "Patient Id"
+                  }
+              },
+              "position": 0,
+              "type": "string",
+              "length": [
+                  5,
+                  13
+              ],
+              "required": true
+          },
+          "lmp_year": {
+              "labels": {
+                  "tiny": {
+                      "en": "LMP_Y"
+                  },
+                  "short": {
+                      "en": "LMP Year"
+                  }
+              },
+              "position": 1,
+              "type": "bsYear",
+              "required": true
+          },
+          "lmp_month": {
+              "labels": {
+                  "tiny": {
+                      "en": "LMP_M"
+                  },
+                  "short": {
+                      "en": "LMP Month"
+                  }
+              },
+              "position": 2,
+              "type": "bsMonth",
+              "required": true
+          },
+          "lmp_day": {
+              "labels": {
+                  "tiny": {
+                      "en": "LMP_D"
+                  },
+                  "short": {
+                      "en": "LMP Day"
+                  }
+              },
+              "position": 3,
+              "type": "bsDay",
+              "required": true
+          },
+          "lmp_date": {
+              "labels": {
+                  "tiny": {
+                      "en": "LMP_DATE"
+                  },
+                  "short": {
+                      "en": "LMP Date"
+                  }
+              },
+              "position": 4,
+              "type": "bsAggreDate",
+              "required": false
+          }
+      },
+      "public_form": false
+  },
+  "ED": {
+      "meta": {
+          "code": "ED",
+          "translation_key": "forms.ed.title",
+          "icon": "icon-delivery"
+      },
+      "fields": {
+          "patient_id": {
+              "labels": {
+                  "tiny": {
+                      "en": "patient_id"
+                  },
+                  "short": {
+                      "en": "Patient Id"
+                  }
+              },
+              "position": 0,
+              "type": "string",
+              "length": [
+                  5,
+                  13
+              ],
+              "required": true
+          },
+          "delivery_year": {
+              "labels": {
+                  "tiny": {
+                      "en": "delivery_Y"
+                  },
+                  "short": {
+                      "en": "delivery Year"
+                  }
+              },
+              "position": 1,
+              "type": "bsYear",
+              "required": true
+          },
+          "delivery_month": {
+              "labels": {
+                  "tiny": {
+                      "en": "delivery_M"
+                  },
+                  "short": {
+                      "en": "delivery Month"
+                  }
+              },
+              "position": 2,
+              "type": "bsMonth",
+              "required": true
+          },
+          "delivery_day": {
+              "labels": {
+                  "tiny": {
+                      "en": "delivery_D"
+                  },
+                  "short": {
+                      "en": "delivery Day"
+                  }
+              },
+              "position": 3,
+              "type": "bsDay",
+              "required": true
+          },
+          "delivery_date": {
+              "labels": {
+                  "tiny": {
+                      "en": "DELIVERY_DATE"
+                  },
+                  "short": {
+                      "en": "Delivery Date"
+                  }
+              },
+              "position": 4,
+              "type": "bsAggreDate",
+              "required": false
+          }
+      },
+      "public_form": false
+  },
+  "EANC": {
+      "meta": {
+          "code": "EANC",
+          "translation_key": "forms.eanc.title",
+          "icon": "icon-pregnancy"
+      },
+      "fields": {
+          "patient_id": {
+              "labels": {
+                  "tiny": {
+                      "en": "patient_id"
+                  },
+                  "short": {
+                      "en": "Patient Id"
+                  }
+              },
+              "position": 0,
+              "type": "string",
+              "length": [
+                  5,
+                  13
+              ],
+              "required": true
+          },
+          "anc_year": {
+              "labels": {
+                  "tiny": {
+                      "en": "anc_Y"
+                  },
+                  "short": {
+                      "en": "anc Year"
+                  }
+              },
+              "position": 1,
+              "type": "bsYear",
+              "required": true
+          },
+          "anc_month": {
+              "labels": {
+                  "tiny": {
+                      "en": "anc_M"
+                  },
+                  "short": {
+                      "en": "anc Month"
+                  }
+              },
+              "position": 2,
+              "type": "bsMonth",
+              "required": true
+          },
+          "anc_day": {
+              "labels": {
+                  "tiny": {
+                      "en": "anc_D"
+                  },
+                  "short": {
+                      "en": "anc Day"
+                  }
+              },
+              "position": 3,
+              "type": "bsDay",
+              "required": true
+          },
+          "anc_visit_number": {
+              "labels": {
+                  "tiny": {
+                      "en": "anc_visit_number"
+                  },
+                  "short": {
+                      "en": "anc visit number"
+                  }
+              },
+              "position": 4,
+              "type": "integer",
+              "required": true
+          },
+          "anc_date": {
+              "labels": {
+                  "tiny": {
+                      "en": "anc_DATE"
+                  },
+                  "short": {
+                      "en": "anc Date"
+                  }
+              },
+              "position": 5,
+              "type": "bsAggreDate",
+              "required": false
+          }
+      },
+      "public_form": false
+  },
+  "EPNC": {
+      "meta": {
+          "code": "EPNC",
+          "translation_key": "forms.EPNC.title",
+          "icon": "icon-pnc"
+      },
+      "fields": {
+          "patient_id": {
+              "labels": {
+                  "tiny": {
+                      "en": "patient_id"
+                  },
+                  "short": {
+                      "en": "Patient Id"
+                  }
+              },
+              "position": 0,
+              "type": "string",
+              "length": [
+                  5,
+                  13
+              ],
+              "required": true
+          },
+          "pnc_year": {
+              "labels": {
+                  "tiny": {
+                      "en": "pnc_Y"
+                  },
+                  "short": {
+                      "en": "pnc Year"
+                  }
+              },
+              "position": 1,
+              "type": "bsYear",
+              "required": true
+          },
+          "pnc_month": {
+              "labels": {
+                  "tiny": {
+                      "en": "pnc_M"
+                  },
+                  "short": {
+                      "en": "pnc Month"
+                  }
+              },
+              "position": 2,
+              "type": "bsMonth",
+              "required": true
+          },
+          "pnc_day": {
+              "labels": {
+                  "tiny": {
+                      "en": "pnc_D"
+                  },
+                  "short": {
+                      "en": "pnc Day"
+                  }
+              },
+              "position": 3,
+              "type": "bsDay",
+              "required": true
+          },
+          "pnc_visit_number": {
+              "labels": {
+                  "tiny": {
+                      "en": "pnc_visit_number"
+                  },
+                  "short": {
+                      "en": "pnc visit number"
+                  }
+              },
+              "position": 4,
+              "type": "integer",
+              "required": true
+          },
+          "pnc_date": {
+              "labels": {
+                  "tiny": {
+                      "en": "pnc_DATE"
+                  },
+                  "short": {
+                      "en": "pnc Date"
+                  }
+              },
+              "position": 5,
+              "type": "bsAggreDate",
+              "required": false
+          }
+      },
+      "public_form": false
+  },
+  "G": {
+    "meta": {
+      "code": "G",
+      "translation_key": "forms.g.title",
+      "icon": "icon-anc-followup"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "id"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    }
+  },
+  "J": {
+    "meta": {
+      "code": "J",
+      "translation_key": "forms.j.title",
+      "icon": "icon-delivery"
+    },
+    "fields": {
+      "delivery_code": {
+        "labels": {
+          "short": {
+            "en": "Delivery Code"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          1,
+          2
+        ],
+        "required": true
+      },
+      "patient_id": {
+        "labels": {
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "days_since_birth": {
+        "labels": {
+          "short": {
+            "en": "Days Since Birth"
+          },
+          "tiny": {
+            "en": "DSB"
+          }
+        },
+        "position": 2,
+        "type": "integer",
+        "length": [
+          1,
+          2
+        ],
+        "range": [
+          1,
+          50
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 3,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    }
+  },
+  "D": {
+    "meta": {
+      "code": "D",
+      "translation_key": "forms.d.title",
+      "icon": "icon-anc-danger-sign"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "B": {
+    "meta": {
+      "code": "B",
+      "translation_key": "forms.b.title",
+      "icon": "icon-off"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string",
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "tiny": {
+            "en": "r",
+            "sw": "r"
+          },
+          "short": {
+            "en": "Reason"
+          }
+        },
+        "position": 1,
+        "length": [
+          3,
+          100
+        ],
+        "type": "string"
+      }
+    }
+  },
+  "F": {
+    "meta": {
+      "code": "F",
+      "translation_key": "forms.f.title",
+      "icon": "icon-on"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string"
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "P": {
+    "meta": {
+      "code": "P",
+      "translation_key": "forms.p.title",
+      "icon": "icon-pnc"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "ID"
+          },
+          "short": {
+            "en": "ID"
+          }
+        },
+        "position": 0,
+        "length": [
+          5,
+          13
+        ],
+        "type": "string",
+        "required": true
+      },
+      "pnc_visits": {
+        "labels": {
+          "tiny": {
+            "en": "PNCV"
+          },
+          "short": {
+            "en": "PNC Visits"
+          }
+        },
+        "position": 1,
+        "length": [
+          1,
+          1
+        ],
+        "range": [
+          0,
+          4
+        ],
+        "type": "string",
+        "required": true
+      },
+      "notes": {
+        "labels": {
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          100
+        ],
+        "required": false
+      }
+    }
+  },
+  "M": {
+    "meta": {
+      "code": "M",
+      "translation_key": "forms.m.title",
+      "icon": "icon-death"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "id"
+          },
+          "short": {
+            "en": "Patient Id"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          5,
+          13
+        ],
+        "required": true
+      },
+      "death_notes": {
+        "labels": {
+          "tiny": {
+            "en": "note"
+          },
+          "short": {
+            "en": "Notes"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      }
+    },
+    "public_form": false
+  },
+  "1": {
+    "meta": {
+      "code": "1",
+      "translation_key": "forms.1.title",
+      "icon": "icon-anc-followup"
+    },
+    "fields": {}
+  },
+  "१": {
+    "meta": {
+      "code": "१",
+      "translation_key": "forms.1.title",
+      "icon": "icon-anc-followup"
+    },
+    "fields": {}
+  },
+  "OPENMRS_PATIENT": {
+    "meta": {
+      "code": "openmrs_patient",
+      "translation_key": "forms.n.title",
+      "icon": "medic-person"
+    },
+    "fields": {
+      "age_in_days": {
+        "labels": {
+          "tiny": {
+            "en": "Age in Days"
+          },
+          "short": {
+            "en": "Age in Days"
+          }
+        },
+        "position": 0,
+        "type": "integer",
+        "required": true
+      },
+      "phone_number": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Phone"
+          },
+          "short": {
+            "en": "Patient Phone"
+          }
+        },
+        "position": 1,
+        "flags":{
+          "allow_duplicate": false
+        },
+        "type": "phone_number",
+        "required": true
+      },
+      "patient_name": {
+        "labels": {
+          "tiny": {
+            "en": "Patient Name"
+          },
+          "short": {
+            "en": "Patient Name"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          30
+        ],
+        "required": true
+      },
+      "location_id": {
+        "labels": {
+          "tiny": {
+            "en": "location_id"
+          },
+          "short": {
+            "en": "location_id"
+          }
+        },
+        "position": 3,
+        "type": "string",
+        "length": [
+          1,
+          60
+        ],
+        "required": true
+      },
+      "external_id": {
+        "labels": {
+          "tiny": {
+            "en": "OpenMRS ID"
+          },
+          "short": {
+            "en": "OpenMRS ID"
+          }
+        },
+        "position": 4,
+        "type": "string",
+        "length": [
+          1,
+          60
+        ],
+        "required": true
+      }
+    },
+    "public_form": true
+  },
+  "covid_19": {
+    "meta": {
+      "code": "covid_19",
+      "translation_key": "forms.openmrs_anc.title",
+      "icon": "icon-anc-followup"
+    },
+    "fields": {
+      "patient_id": {
+        "labels": {
+          "tiny": {
+            "en": "id"
+          },
+          "short": {
+            "en": "Patient Id"
+          }
+        },
+        "position": 0,
+        "type": "string",
+        "length": [
+          1,
+          13
+        ],
+        "required": true
+      },
+      "17a57368-5f59-42c8-aaab-f2774d21501e": {
+        "labels": {
+          "short": {
+            "en": "covid_symptoms"
+          }
+        },
+        "position": 1,
+        "type": "string",
+        "length": [
+          1,
+          20
+        ],
+        "required": false
+      },
+      "1427aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+        "labels": {
+          "short": {
+            "en": "onset_date"
+          }
+        },
+        "position": 2,
+        "type": "string",
+        "length": [
+          1,
+          60
+        ],
+        "required": false
+      },
+      "5596aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+        "labels": {
+          "short": {
+            "en": "test_done"
+          }
+        },
+        "position": 3,
+        "type": "string",
+        "length": [
+          1,
+          60
+        ],
+        "required": false
+      }
+    },
+    "public_form": true
+  }
+}

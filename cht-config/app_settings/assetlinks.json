@@ -1,0 +1,8 @@
+[{
+	"relation": ["delegate_permission/common.handle_all_urls"],
+	"target": {
+		"namespace": "android_app",
+		"package_name": "org.medicmobile.webapp.mobile.gandaki_ne",
+		"sha256_cert_fingerprints": ["7C:C7:ED:EE:B8:43:8D:1A:54:3D:08:A4:A8:05:D8:F6:A4:13:70:F8:63:FD:93:8D:AA:32:94:34:99:11:A2:B3"]
+	}
+}]
